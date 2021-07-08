@@ -30,8 +30,8 @@ img {
 }
 
 .ic1,.ic2,.ic3{
-width: 30%;
-   height: 30px;
+width: 370px;
+   height: 18px;
    /*filter: opacity(50%);*/
 }
 
@@ -539,7 +539,7 @@ a#scrollUp:hover {
     font-size: 40px;
     font-weight: bold;
     line-height: 30px;
-    text-shadow: 0 0 13px black;
+    text-shadow: 0 0 9px darkslategrey;
     margin-bottom: 25px;
     color:aqua;
 }
@@ -633,7 +633,9 @@ a#scrollUp:hover {
     overflow: hidden;
     border: 2px solid aqua;
     border-radius: 10px 180px 10px 10px;
-    background: url(../images/about/w.jpg) no-repeat center center / cover;
+    background: url("../images/about/w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .about-area h2{
 color:aqua;
@@ -1110,12 +1112,9 @@ text-shadow:0 0 10px black;
 
 /*--------footer-area start --------*/
 .footer-area{
-   background: url(../images/bg/g.jpg) no-repeat center center / cover;
-   height:93.5%;
+    background: url(../images/bg/g.jpg) no-repeat center center / cover;   
 }
-.footer-top{
-    padding: 200px 0px 70px;
-}
+
 .footer-widget{
    margin-bottom: 0px;
 }
@@ -1269,13 +1268,17 @@ text-shadow: 0 0 8px rgb(0, 255, 21);
 .foot{
     background-color:#ff7700;
     height:50px;
-    padding:10px;
+    bottom: 0;
+    position: fixed;
+    width:100%;
 }
 .foot > h5 {   
     text-shadow: 0 0 1px black;
     text-align: center; 
     color:black;
     font-weight: bold;
+    font-size:16px;
+    padding:13px;
 }
 /*--------footer-area end --------*/
 
